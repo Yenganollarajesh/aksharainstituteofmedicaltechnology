@@ -90,14 +90,15 @@ const duplicatedImages = computed(() => {
 }
 
 .image-item {
-  height: 250px;
-  width: 250px; /* Fixed width for consistency */
+  width: 280px;
+  height: 210px; /* Fixed height for consistency */
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  flex-shrink: 0; /* Prevent cards from shrinking */
-  margin: 0.5rem; /* Add margin around each card */
+  flex-shrink: 0;
+  margin: 0.5rem;
+  position: relative;
 }
 
 .image-item:hover {
@@ -108,10 +109,31 @@ const duplicatedImages = computed(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
+  object-position: center;
 }
 
 .image-item:hover img {
   transform: scale(1.05);
+}
+
+/* Adjust grid layout for better responsiveness */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1400px;
+  padding: 0 1rem;
+}
+
+/* Adjust scroll grid for better spacing */
+.image-scroll-grid {
+  display: flex;
+  width: calc(300px * 40);
+  animation: scroll 60s linear infinite;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  align-items: center;
 }
 </style>
