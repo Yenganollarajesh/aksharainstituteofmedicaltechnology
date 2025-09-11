@@ -23,7 +23,7 @@
     </section>
 
     <!-- Announcement Banner -->
-    <section class="announcement-banner">
+    <section class="announcement-banner" v-if="false">
       <div class="container">
         <div class="announcement-content">
           <div class="announcement-icon">📢</div>
@@ -38,8 +38,8 @@
       </div>
     </section>
 
-    <!-- Key Features Section (part of Home) -->
-    <section class="features-section">
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="features-section">
       <div class="container">
         <h2 class="section-title">Why Choose Us?</h2>
         <div class="features-grid">
@@ -472,7 +472,7 @@ const submitContactForm = () => {
 .hero-section {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
   color: white;
-  padding: 8rem 2rem 6rem;
+  padding: 6rem 2rem 6rem;
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -1558,9 +1558,15 @@ section {
 }
 
 @media (max-width: 768px) {
+  .hero-section{
+    padding: 2rem 2rem 6rem;
+  }
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  .hero-image{
+    display: none;
   }
 
   .hero-text h1 {

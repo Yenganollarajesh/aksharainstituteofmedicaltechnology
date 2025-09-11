@@ -14,10 +14,10 @@
         
         <div class="nav-menu" :class="{ active: isMenuOpen }">
           <a href="#home" class="nav-link" :class="{ active: activeSection === 'home' }" @click="closeMenu">Home</a>
+          <a href="#why-choose-us" class="nav-link" :class="{ active: activeSection === 'why-choose-us' }" @click="closeMenu">Why Choose Us</a>
           <a href="#about" class="nav-link" :class="{ active: activeSection === 'about' }" @click="closeMenu">About</a>
           <a href="#courses" class="nav-link" :class="{ active: activeSection === 'courses' }" @click="closeMenu">Courses</a>
           <a href="#admissions" class="nav-link" :class="{ active: activeSection === 'admissions' }" @click="closeMenu">Admissions</a>
-          <a href="#news" class="nav-link" :class="{ active: activeSection === 'news' }" @click="closeMenu">News</a>
           <a href="#placement" class="nav-link" :class="{ active: activeSection === 'placement' }" @click="closeMenu">Placement</a>
           <a href="#facilities" class="nav-link" :class="{ active: activeSection === 'facilities' }" @click="closeMenu">Facilities</a>
           <a href="#gallery" class="nav-link" :class="{ active: activeSection === 'gallery' }" @click="closeMenu">Gallery</a>
@@ -51,7 +51,7 @@ const closeMenu = () => {
 
 // Simple and reliable scroll detection
 const updateActiveSection = () => {
-  const sections = ['home', 'about', 'courses', 'admissions', 'news', 'placement', 'facilities', 'gallery', 'contact']
+  const sections = ['home', 'why-choose-us', 'about', 'courses', 'admissions', 'placement', 'facilities', 'gallery', 'contact']
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop
   const windowHeight = window.innerHeight
   const documentHeight = document.documentElement.scrollHeight
@@ -210,7 +210,7 @@ onUnmounted(() => {
   color: var(--text-primary);
   font-weight: 500;
   font-family: 'Inter', sans-serif;
-  padding: 0.5rem 0.5rem;
+  // padding: 0.2rem 0.2rem;
   border-radius: 4px;
   position: relative;
   transition: all 0.2s ease;
