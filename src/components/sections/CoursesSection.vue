@@ -8,7 +8,14 @@
       
       <div class="courses-grid">
         <div class="course-card">
-          <div class="course-icon">🧪</div>
+          <div class="course-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 11H15L13 13.5L11 11Z" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 3H6L8 17H19L21 7H10" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9" cy="20" r="1" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="20" cy="20" r="1" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <h3>Diploma in Medical Laboratory Technology (DMLT)</h3>
           <div class="course-details">
             <div class="detail-item">
@@ -33,7 +40,11 @@
         </div>
 
         <div class="course-card">
-          <div class="course-icon">🩺</div>
+          <div class="course-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 12H18L15 21L9 3L6 12H2" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <h3>Diploma in Anaesthesia & Nursing Sciences (DANS)</h3>
           <div class="course-details">
             <div class="detail-item">
@@ -61,7 +72,12 @@
         </div>
 
         <div class="course-card">
-          <div class="course-icon">🏥</div>
+          <div class="course-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="#1e40af" stroke-width="2"/>
+              <path d="M12 8v8M8 12h8" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <h3>Diploma in Medical Surgical OT Technology (DMSOT)</h3>
           <div class="course-details">
             <div class="detail-item">

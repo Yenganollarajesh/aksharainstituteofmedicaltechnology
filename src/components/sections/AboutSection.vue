@@ -28,7 +28,10 @@
         <div class="about-image">
           <div class="image-placeholder">
             <div class="placeholder-content">
-              <span class="placeholder-icon">🏥</span>
+              <svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 21V9l9-6 9 6v12H3z" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 21V12h6v9" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
               <p>Modern Campus & Facilities</p>
             </div>
           </div>
@@ -40,17 +43,36 @@
         <h3>Accreditation & Recognition</h3>
         <div class="accreditation-grid">
           <div class="accreditation-card">
-            <div class="accreditation-icon">🏆</div>
+            <div class="accreditation-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 22h16l-1-7H5l-1 7z" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 15v-3a4 4 0 0 1 8 0v3" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <h4>State Government Approved</h4>
             <p>Recognized by the Telangana State Health Department and affiliated with the TS Paramedical Board</p>
           </div>
           <div class="accreditation-card">
-            <div class="accreditation-icon">🤝</div>
+            <div class="accreditation-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 18l2 2 4-4" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.5 4.21l4.5 2.6 4.5-2.6" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 6.81V17" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <h4>Hospital Affiliations</h4>
             <p>Partnerships with 25+ leading hospitals for clinical training</p>
           </div>
           <div class="accreditation-card">
-            <div class="accreditation-icon">✅</div>
+            <div class="accreditation-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12l2 2 4-4" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="10" stroke="#059669" stroke-width="2"/>
+              </svg>
+            </div>
             <h4>Medical & Health Dept. Standards</h4>
             <p>Curriculum aligned with national Medical & Health Department protocols</p>
           </div>
@@ -65,19 +87,26 @@
           <h4>Management Team</h4>
           <div class="profile-grid">
             <div class="profile-card">
-              <div class="profile-avatar">👨‍💼</div>
+              <div class="profile-avatar">
+                <img src="@/assets/coFounder.jpeg" alt="Co-founder" />
+              </div>
               <div class="profile-info">
-                <h5>Dr. Rajesh Kumar</h5>
-                <p class="profile-title">Principal & Director</p>
-                <p class="profile-desc">M.D., 25+ years in medical education and healthcare administration</p>
+                <h5>Ms. Sunaiah Parveena Shaik</h5>
+                <p class="profile-title">Co-founder</p>
+                <p class="profile-desc">MSc Nursing, MSc Psychology</p>
               </div>
             </div>
             <div class="profile-card">
-              <div class="profile-avatar">👩‍💼</div>
+              <div class="profile-avatar">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="12" cy="7" r="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
               <div class="profile-info">
-                <h5>Mrs. Priya Sharma</h5>
-                <p class="profile-title">Academic Dean</p>
-                <p class="profile-desc">M.Sc. Nursing, 20+ years in paramedical education and curriculum development</p>
+                <h5>Mrs. Rumandla Padma</h5>
+                <p class="profile-title">Principal</p>
+                <p class="profile-desc">MA English, MSc Botany</p>
               </div>
             </div>
           </div>
@@ -196,7 +225,10 @@
 
 .placeholder-content {
   text-align: center;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   .placeholder-icon {
     font-size: 3rem;
     display: block;
@@ -315,6 +347,14 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
   }
   
   .profile-info {

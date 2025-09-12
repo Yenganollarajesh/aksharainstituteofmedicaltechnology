@@ -14,7 +14,33 @@
           :class="['category-btn', { active: activeCategory === category.id }]"
           @click="setActiveCategory(category.id)"
         >
-          <span class="category-icon">{{ category.icon }}</span>
+          <span class="category-icon">
+            <svg v-if="category.id === 'all'" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+              <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+              <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <svg v-else-if="category.id === 'seminar'" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 10V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V10C3.10457 10 4 10.8954 4 12C4 13.1046 3.10457 14 2 14V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V14C20.8954 14 20 13.1046 20 12C20 10.8954 20.8954 10 22 10Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <svg v-else-if="category.id === 'job-fair'" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+              <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+              <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <svg v-else-if="category.id === 'internship'" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 21H21V19H3V21Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M5 19H19V7H5V19ZM7 9H17V17H7V9Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M9 11H15V13H9V11Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M9 14H15V15H9V14Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <svg v-else width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
           {{ category.name }}
         </button>
       </div>
@@ -29,7 +55,27 @@
           <div class="event-header">
             <div class="header-left">
               <div class="event-category-badge">
-                <span class="badge-icon">{{ getCategoryIcon(event.category) }}</span>
+                <span class="badge-icon">
+                  <svg v-if="event.category === 'seminar'" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 10V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V10C3.10457 10 4 10.8954 4 12C4 13.1046 3.10457 14 2 14V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V14C20.8954 14 20 13.1046 20 12C20 10.8954 20.8954 10 22 10Z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <svg v-else-if="event.category === 'job-fair'" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <svg v-else-if="event.category === 'internship'" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 21H21V19H3V21Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M5 19H19V7H5V19ZM7 9H17V17H7V9Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M9 11H15V13H9V11Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M9 14H15V15H9V14Z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <svg v-else width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
                 {{ getCategoryName(event.category) }}
               </div>
               <div class="event-date">{{ event.date }}</div>
@@ -45,15 +91,30 @@
             
             <div class="event-details">
               <div class="detail-item" v-if="event.venue">
-                <span class="detail-icon">📍</span>
+                <span class="detail-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#64748b" stroke-width="2"/>
+                    <circle cx="12" cy="10" r="3" stroke="#64748b" stroke-width="2"/>
+                  </svg>
+                </span>
                 <span>{{ event.venue }}</span>
               </div>
               <div class="detail-item" v-if="event.time">
-                <span class="detail-icon">🕒</span>
+                <span class="detail-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="#64748b" stroke-width="2"/>
+                    <polyline points="12,6 12,12 16,14" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
                 <span>{{ event.time }}</span>
               </div>
               <div class="detail-item" v-if="event.organizer">
-                <span class="detail-icon">👥</span>
+                <span class="detail-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
                 <span>{{ event.organizer }}</span>
               </div>
             </div>
@@ -79,7 +140,15 @@
 
       <!-- Upcoming Events Summary -->
       <div class="upcoming-summary">
-        <h3>📅 Upcoming This Month</h3>
+        <h3>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="#1e40af" stroke-width="2"/>
+            <line x1="16" y1="2" x2="16" y2="6" stroke="#1e40af" stroke-width="2"/>
+            <line x1="8" y1="2" x2="8" y2="6" stroke="#1e40af" stroke-width="2"/>
+            <line x1="3" y1="10" x2="21" y2="10" stroke="#1e40af" stroke-width="2"/>
+          </svg>
+          Upcoming This Month
+        </h3>
         <div class="summary-grid">
           <div class="summary-item">
             <div class="summary-number">{{ getEventCount('seminar') }}</div>
@@ -111,11 +180,11 @@ const activeCategory = ref('all');
 
 // Categories for filtering
 const categories = ref([
-  { id: 'all', name: 'All Events', icon: '📅' },
-  { id: 'seminar', name: 'Seminars', icon: '🎓' },
-  { id: 'job-fair', name: 'Job Fairs', icon: '💼' },
-  { id: 'internship', name: 'Internships', icon: '🏥' },
-  { id: 'other', name: 'Other', icon: '📢' }
+  { id: 'all', name: 'All Events' },
+  { id: 'seminar', name: 'Seminars' },
+  { id: 'job-fair', name: 'Job Fairs' },
+  { id: 'internship', name: 'Internships' },
+  { id: 'other', name: 'Other' }
 ]);
 
 // Events data
@@ -282,15 +351,7 @@ const setActiveCategory = (categoryId) => {
   activeCategory.value = categoryId;
 };
 
-const getCategoryIcon = (category) => {
-  const categoryMap = {
-    'seminar': '🎓',
-    'job-fair': '💼',
-    'internship': '🏥',
-    'other': '📢'
-  };
-  return categoryMap[category] || '📅';
-};
+// Removed getCategoryIcon function as we now use SVGs directly in template
 
 const getCategoryName = (category) => {
   const categoryMap = {

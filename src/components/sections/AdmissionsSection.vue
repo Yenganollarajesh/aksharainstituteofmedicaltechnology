@@ -9,7 +9,12 @@
       <!-- Admission Status Banner -->
       <div class="admission-status-banner">
         <div class="status-content">
-          <div class="status-badge">🎓 Applications Open</div>
+          <div class="status-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z" fill="currentColor"/>
+            </svg>
+            Applications Open
+          </div>
           <div class="deadline-info">
             <span class="deadline-label">Application Deadline:</span>
             <span class="deadline-date">June 30, 2026</span>
@@ -17,10 +22,16 @@
         </div>
         <div class="quick-actions">
           <button class="btn-primary" @click="downloadForm('general')">
-            📄 Download Application Form
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="currentColor"/>
+            </svg>
+            Download Application Form
           </button>
           <button class="btn-secondary" @click="scrollToContact">
-            📞 Contact Admissions
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+            </svg>
+            Contact Admissions
           </button>
         </div>
       </div>
@@ -28,7 +39,13 @@
       <div class="admission-content">
         <!-- Eligibility Criteria -->
         <div class="eligibility-section">
-          <h3 class="content-title">📋 Eligibility Criteria</h3>
+          <h3 class="content-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 3L1 9l11 6 9-5.09V17h2V9L12 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7 12v6c0 1.1 2.24 2 5 2s5-.9 5-2v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+            Eligibility Criteria
+          </h3>
           <div class="eligibility-cards">
             <div class="eligibility-card">
               <h4>DMLT (Diploma in Medical Laboratory Technology)</h4>
@@ -62,7 +79,14 @@
 
         <!-- How to Apply -->
         <div class="application-process">
-          <h3 class="content-title">🚀 How to Apply</h3>
+          <h3 class="content-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 2h6a2 2 0 0 1 2 2v2h-2V4H9v2H7V4a2 2 0 0 1 2-2z" fill="currentColor"/>
+    <rect x="6" y="6" width="12" height="16" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+    <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+            How to Apply
+          </h3>
           <div class="process-timeline">
             <div class="timeline-item">
               <div class="timeline-number">1</div>
@@ -70,8 +94,13 @@
                 <h4>Download Application Form</h4>
                 <p>Get the application form from our website or collect from college office</p>
                 <div class="timeline-actions">
-                  <button class="btn-download" @click="downloadForm('general')">Download General Form</button>
-                  <button class="btn-download" @click="downloadForm('dmlt')">Download DMLT Form</button>
+                  <button class="btn-download" @click="downloadForm('general')">
+                    Download Form
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <!-- <button class="btn-download" @click="downloadForm('dmlt')">Download DMLT Form</button> -->
                 </div>
               </div>
             </div>
@@ -123,38 +152,73 @@
 
         <!-- Downloadable Forms -->
         <div class="forms-section">
-          <h3 class="content-title">📥 Downloadable Application Forms</h3>
+          <h3 class="content-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z" fill="currentColor"/>
+            </svg>
+            Downloadable Application Forms
+          </h3>
           <div class="forms-grid">
             <div class="form-card">
-              <div class="form-icon">📄</div>
+              <div class="form-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="currentColor"/>
+                </svg>
+              </div>
               <h4>General Application Form</h4>
               <p>Common application form for all courses</p>
               <button class="btn-download" @click="downloadForm('general')">
                 Download PDF
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z" fill="currentColor"/>
+                </svg>
               </button>
             </div>
             <div class="form-card">
-              <div class="form-icon">🧪</div>
+              <div class="form-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 2v7.59l-4.3 4.3a5 5 0 107.07 7.07l4.3-4.3V2h-7.07z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+              </div>
               <h4>DMLT Specific Form</h4>
               <p>Specialized form for Medical Laboratory Technology</p>
               <button class="btn-download" @click="downloadForm('dmlt')">
                 Download PDF
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z" fill="currentColor"/>
+                </svg>
               </button>
             </div>
             <div class="form-card">
-              <div class="form-icon">🩺</div>
+              <div class="form-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 3a3 3 0 016 0v6a3 3 0 11-6 0V3zM18 9v6a6 6 0 11-12 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18" cy="9" r="2" fill="currentColor"/>
+  </svg>
+              </div>
               <h4>DANS Specific Form</h4>
               <p>Specialized form for Anaesthesia & Nursing Sciences</p>
               <button class="btn-download" @click="downloadForm('dans')">
                 Download PDF
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z" fill="currentColor"/>
+                </svg>
               </button>
             </div>
             <div class="form-card">
-              <div class="form-icon">🏥</div>
+              <div class="form-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+              </div>
               <h4>DMSOT Specific Form</h4>
               <p>Specialized form for Medical Surgical OT Technology</p>
               <button class="btn-download" @click="downloadForm('dmsot')">
                 Download PDF
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z" fill="currentColor"/>
+                </svg>
               </button>
             </div>
           </div>
@@ -162,27 +226,44 @@
 
         <!-- Offline Registration -->
         <div class="offline-registration">
-          <h3 class="content-title">🏢 Offline Registration Option</h3>
+          <h3 class="content-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2ZM2 17L12 22L22 17M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Offline Registration Option
+          </h3>
           <div class="offline-content">
             <div class="offline-info">
               <h4>Visit Our Campus</h4>
               <div class="campus-details">
                 <div class="detail-item">
-                  <span class="icon">🕒</span>
+                  <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="currentColor"/>
+                    </svg>
+                  </span>
                   <div>
                     <strong>Office Hours:</strong>
                     <p>Monday to Saturday: 9:00 AM - 5:00 PM<br>Sunday: Closed</p>
                   </div>
                 </div>
                 <div class="detail-item">
-                  <span class="icon">📍</span>
+                  <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5S14.5 7.62 14.5 9S13.38 11.5 12 11.5Z" fill="currentColor"/>
+                    </svg>
+                  </span>
                   <div>
                     <strong>Address:</strong>
                     <p>Paramedical College Campus<br>Main Road, City - 123456</p>
                   </div>
                 </div>
                 <div class="detail-item">
-                  <span class="icon">📞</span>
+                  <span class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+                    </svg>
+                  </span>
                   <div>
                     <strong>Admissions Helpline:</strong>
                     <p>+91-XXXXX-XXXXX<br>admissions@college.edu</p>
@@ -193,12 +274,42 @@
             <div class="offline-benefits">
               <h4>Benefits of Offline Registration</h4>
               <ul>
-                <li>✓ Personal guidance from admission counselors</li>
-                <li>✓ Immediate document verification</li>
-                <li>✓ Campus tour and facility visit</li>
-                <li>✓ Direct interaction with faculty</li>
-                <li>✓ Instant query resolution</li>
-                <li>✓ Same-day admission confirmation (if eligible)</li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                    <polyline points="20,6 9,17 4,12" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Personal guidance from admission counselors
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                    <polyline points="20,6 9,17 4,12" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Immediate document verification
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                    <polyline points="20,6 9,17 4,12" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Campus tour and facility visit
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                    <polyline points="20,6 9,17 4,12" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Direct interaction with faculty
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                    <polyline points="20,6 9,17 4,12" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Instant query resolution
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                    <polyline points="20,6 9,17 4,12" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Same-day admission confirmation (if eligible)
+                </li>
               </ul>
             </div>
           </div>
@@ -211,20 +322,19 @@
 <script setup>
 // Download form functionality
 const downloadForm = (formType) => {
-  // In a real application, this would download actual PDF files
-  const forms = {
-    general: 'general-application-form.pdf',
-    dmlt: 'dmlt-application-form.pdf',
-    dans: 'dans-application-form.pdf',
-    dmsot: 'dmsot-application-form.pdf'
-  };
-  
-  // Simulate download
-  const fileName = forms[formType] || forms.general;
-  console.log(`Downloading ${fileName}`);
-  
-  // In production, you would implement actual file download
-  alert(`Downloading ${fileName}. In production, this would download the actual PDF form.`);
+  // Import the PDF file from assets
+  import('@/assets/file-example_PDF_1MB.pdf').then((pdfModule) => {
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = pdfModule.default;
+    link.download = 'Application-Form.pdf'; // Set the download filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }).catch((error) => {
+    console.error('Error downloading PDF:', error);
+    alert('Error downloading the form. Please try again.');
+  });
 };
 
 // Scroll to contact section
@@ -291,7 +401,15 @@ const scrollToContact = () => {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
   }
   
   .deadline-info {
@@ -334,6 +452,15 @@ const scrollToContact = () => {
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
 }
 
 .btn-primary {
@@ -360,7 +487,9 @@ const scrollToContact = () => {
 .btn-download {
   background: #1e40af;
   color: white;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     background: #1e3a8a;
     transform: translateY(-2px);
@@ -380,6 +509,15 @@ const scrollToContact = () => {
   color: #1e40af;
   margin-bottom: 2rem;
   font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  
+  svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
 }
 
 // Eligibility Section
@@ -571,8 +709,16 @@ const scrollToContact = () => {
   }
   
   .form-icon {
-    font-size: 2.5rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    svg {
+      width: 32px;
+      height: 32px;
+      color: #1e40af;
+    }
   }
   
   h4 {
@@ -639,8 +785,17 @@ const scrollToContact = () => {
   gap: 1rem;
   
   .icon {
-    font-size: 1.5rem;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2rem;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #1e40af;
+    }
   }
   
   div {

@@ -10,18 +10,24 @@
         <p class="hero-description">
           Join our world-class paramedical programs and embark on a rewarding career in healthcare.
         </p>
-        <div class="hero-highlights">
-          <div class="highlight-item">
-            <span class="highlight-icon">🎓</span>
-            <span class="highlight-text">Expert Faculty</span>
+        <div class="college-info">
+          <div class="info-item">
+            <span class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.6947 13.7H15.7037M15.6947 16.7H15.7037M11.9955 13.7H12.0045M11.9955 16.7H12.0045M8.29431 13.7H8.30329M8.29431 16.7H8.30329" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="info-text">Founded: 2024</span>
           </div>
-          <div class="highlight-item">
-            <span class="highlight-icon">🏥</span>
-            <span class="highlight-text">Modern Facilities</span>
-          </div>
-          <div class="highlight-item">
-            <span class="highlight-icon">📚</span>
-            <span class="highlight-text">Comprehensive Curriculum</span>
+          <div class="info-item">
+            <span class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 8h8M8 12h6M8 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span class="info-text">College Code: AIT-2024</span>
           </div>
         </div>
         <p class="admission-info">
@@ -113,35 +119,41 @@ import collegeLogo from '@/assets/collegeLogo.png';
   margin-right: auto;
 }
 
-.hero-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+.college-info {
+  display: flex;
   justify-content: center;
-  gap: 1rem 1.25rem;
+  gap: 2rem;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
-.highlight-item {
+.info-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 0.75rem;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 10px;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.highlight-icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  display: block;
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  svg {
+    width: 20px;
+    height: 20px;
+    color: #1e40af;
+  }
 }
 
-.highlight-text {
-  font-weight: 500;
+.info-text {
+  font-weight: 600;
   color: #1e40af;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .admission-info {
@@ -166,13 +178,14 @@ import collegeLogo from '@/assets/collegeLogo.png';
     padding: 1rem 1rem 1.5rem 1rem;
   }
   
-  .hero-highlights {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
+  .college-info {
+    gap: 1rem;
+    margin: 1.5rem 0;
   }
   
-  .highlight-item {
-    padding: 0.65rem;
+  .info-item {
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
   }
   
   .admission-info {
