@@ -2,7 +2,7 @@
   <section id="admissions" class="admissions-section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Admissions 2024-25</h2>
+        <h2 class="section-title">Admissions 2025-26</h2>
         <p class="section-subtitle">Join our paramedical programs and build a rewarding healthcare career</p>
       </div>
 
@@ -12,7 +12,7 @@
           <div class="status-badge">🎓 Applications Open</div>
           <div class="deadline-info">
             <span class="deadline-label">Application Deadline:</span>
-            <span class="deadline-date">June 30, 2024</span>
+            <span class="deadline-date">June 30, 2026</span>
           </div>
         </div>
         <div class="quick-actions">
@@ -33,27 +33,27 @@
             <div class="eligibility-card">
               <h4>DMLT (Diploma in Medical Laboratory Technology)</h4>
               <ul>
-                <li><strong>Education:</strong> 10+2 Science (PCB/PCM) from recognized board</li>
+                <li><strong>Education:</strong> 10+2 or Vocational (Intermediate) from recognized board</li>
                 <li><strong>Minimum Marks:</strong> 50% aggregate in 10+2</li>
-                <li><strong>Age Limit:</strong> 17-25 years as on admission date</li>
+                <li><strong>Age Limit:</strong> 17-45 years as on admission date</li>
                 <li><strong>Subjects:</strong> Physics, Chemistry, Biology/Mathematics</li>
               </ul>
             </div>
             <div class="eligibility-card">
               <h4>DANS (Diploma in Anaesthesia & Nursing Sciences)</h4>
               <ul>
-                <li><strong>Education:</strong> 10+2 Science (PCB) from recognized board</li>
+                <li><strong>Education:</strong> 10+2 or Vocational (Intermediate) from recognized board</li>
                 <li><strong>Minimum Marks:</strong> 50% aggregate in 10+2</li>
-                <li><strong>Age Limit:</strong> 17-25 years as on admission date</li>
+                <li><strong>Age Limit:</strong> 17-45 years as on admission date</li>
                 <li><strong>Subjects:</strong> Physics, Chemistry, Biology mandatory</li>
               </ul>
             </div>
             <div class="eligibility-card">
               <h4>DMSOT (Diploma in Medical Surgical OT Technology)</h4>
               <ul>
-                <li><strong>Education:</strong> 10+2 Science (PCB) from recognized board</li>
+                <li><strong>Education:</strong> 10+2 or Vocational (Intermediate) from recognized board</li>
                 <li><strong>Minimum Marks:</strong> 50% aggregate in 10+2</li>
-                <li><strong>Age Limit:</strong> 17-25 years as on admission date</li>
+                <li><strong>Age Limit:</strong> 17-45 years as on admission date</li>
                 <li><strong>Subjects:</strong> Physics, Chemistry, Biology mandatory</li>
               </ul>
             </div>

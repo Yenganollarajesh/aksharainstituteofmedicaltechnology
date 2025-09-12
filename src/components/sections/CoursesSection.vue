@@ -17,7 +17,7 @@
             </div>
             <div class="detail-item eligibility-item">
               <span class="label">Eligibility:</span>
-              <span class="value">10+2 Science (PCB/PCM) - 50%</span>
+              <span class="value">10+2 or Vocational (Intermediate) from recognized board</span>
             </div>
           </div>
           <div class="syllabus-highlights">
@@ -25,6 +25,7 @@
             <ul>
               <li>Clinical Pathology & Hematology</li>
               <li>Microbiology & Biochemistry</li>
+              <li>Immunology & Parasitology</li>
               <li>Blood Banking & Serology</li>
               <li>Lab Instruments & Quality Control</li>
             </ul>
@@ -41,16 +42,20 @@
             </div>
             <div class="detail-item eligibility-item">
               <span class="label">Eligibility:</span>
-              <span class="value">10+2 Science (PCB/PCM) - 50%</span>
+              <span class="value">10+2 or Vocational (Intermediate) from recognized board</span>
             </div>
           </div>
           <div class="syllabus-highlights">
             <h4>Key Subjects:</h4>
             <ul>
-              <li>Pre & Post-operative Patient Care</li>
-              <li>Anaesthetic Drugs & Equipment</li>
-              <li>Patient Monitoring & Safety</li>
-              <li>OT Protocols & Emergency Management</li>
+              <ul>
+                <li>Pre & Post-operative Patient Care</li>
+                <li>Anaesthetic Drugs & Equipment</li>
+                <li>Airway Management & Ventilation</li>
+                <li>ICU Management</li>
+                <li>Patient Monitoring & Safety</li>
+                <li>OT Protocols & Emergency Management</li>
+              </ul>
             </ul>
           </div>
         </div>
@@ -65,16 +70,17 @@
             </div>
             <div class="detail-item eligibility-item">
               <span class="label">Eligibility:</span>
-              <span class="value">10+2 Science (PCB/PCM) - 50%</span>
+              <span class="value">10+2 or Vocational (Intermediate)</span>
             </div>
           </div>
           <div class="syllabus-highlights">
             <h4>Key Subjects:</h4>
             <ul>
-              <li>Operation Theatre Setup & Management</li>
+              <li>Operation Theatre Setup & Protocols</li>
               <li>Surgical Instruments & Sterilization</li>
-              <li>Anatomy & Patient Positioning</li>
-              <li>Asepsis & Infection Control</li>
+              <li>ICU & Emergency Room Management</li>
+              <li>Patient Positioning & Basic Anatomy</li>
+              <li>Asepsis, Disinfection & Infection Control</li>
             </ul>
           </div>
         </div>
@@ -87,7 +93,7 @@
         </div>
         <div class="feature-item">
           <span class="feature-icon">✓</span>
-          <span>Industry-Standard Curriculum</span>
+          <span>Medical & Health Dept.-Standard Curriculum</span>
         </div>
         <div class="feature-item">
           <span class="feature-icon">✓</span>

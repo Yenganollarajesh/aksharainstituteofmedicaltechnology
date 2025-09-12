@@ -137,7 +137,7 @@ onUnmounted(() => {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
   gap: 1.25rem;
@@ -216,7 +216,7 @@ onUnmounted(() => {
   transition: all 0.2s ease;
   font-size: 0.875rem;
   letter-spacing: 0.025em;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   &::after {
     content: '';

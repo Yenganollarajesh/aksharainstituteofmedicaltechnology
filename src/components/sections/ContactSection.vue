@@ -74,26 +74,26 @@
 }
 
 .contact-grid {
-  display: flex;
+  display: grid;
   justify-content: center;
 }
 
 .contact-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 800px;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 1.5rem 2rem;
+  max-width: 960px;
   width: 100%;
 }
 
 .contact-item {
   background: white;
-  padding: 2rem;
+  padding: 1.5rem 1.25rem;
   border-radius: 12px;
   box-shadow: var(--shadow-md);
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.875rem;
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
   
@@ -103,12 +103,13 @@
   }
   
   .contact-icon {
-    font-size: 2rem;
+    font-size: 1.75rem;
     flex-shrink: 0;
+    line-height: 1;
   }
   
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
@@ -119,6 +120,28 @@
     color: var(--text-secondary);
     line-height: 1.6;
     margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 3.5rem 0;
+  }
+  
+  .section-title {
+    font-size: 2.125rem;
+    margin-bottom: 2.25rem;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    max-width: 680px;
+  }
+  
+  .contact-item {
+    padding: 1.25rem 1rem;
   }
 }
 
@@ -126,19 +149,19 @@
   .contact-section {
     padding: 3rem 0;
   }
-  
+
   .section-title {
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
+    font-size: 1.875rem;
   }
   
   .contact-info {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   
   .contact-item {
-    padding: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
   }
 }
 </style>

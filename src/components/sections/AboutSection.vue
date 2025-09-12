@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">About Our College</h2>
-        <p class="section-subtitle">Excellence in paramedical education since 2004</p>
+        <p class="section-subtitle">Excellence in paramedical education since 2024</p>
       </div>
       
       <!-- College History & Vision -->
@@ -11,9 +11,9 @@
         <div class="about-text">
           <h3>Our History & Vision</h3>
           <p>
-            <strong>Founded in 2004</strong> with a vision to bridge the gap between healthcare demand and skilled professionals, 
-            our college has evolved into a leading paramedical education institution. Starting with just 3 courses and 50 students, 
-            we now serve over 500 students across 15+ specialized programs.
+            <strong>Founded in 2024</strong> with a vision to bridge the gap between healthcare demand and skilled professionals, 
+            our college has evolved into a leading paramedical education institution. Starting with just 3 courses and 40 students, 
+            we now serve over 120+ students across 3 specialized programs.
           </p>
           <p>
             <strong>Our Vision:</strong> To be the premier paramedical college that produces competent healthcare professionals 
@@ -21,7 +21,7 @@
           </p>
           <p>
             <strong>Our Mission:</strong> Providing quality education, practical training, and holistic development to create 
-            skilled paramedical professionals ready for the healthcare industry.
+            skilled paramedical professionals ready for the Medical & Health Department.
           </p>
         </div>
         
@@ -42,12 +42,7 @@
           <div class="accreditation-card">
             <div class="accreditation-icon">🏆</div>
             <h4>State Government Approved</h4>
-            <p>Recognized by the State Health Department and Education Ministry</p>
-          </div>
-          <div class="accreditation-card">
-            <div class="accreditation-icon">📜</div>
-            <h4>NAAC Accredited</h4>
-            <p>National Assessment and Accreditation Council certified institution</p>
+            <p>Recognized by the Telangana State Health Department and affiliated with the TS Paramedical Board</p>
           </div>
           <div class="accreditation-card">
             <div class="accreditation-icon">🤝</div>
@@ -56,8 +51,8 @@
           </div>
           <div class="accreditation-card">
             <div class="accreditation-icon">✅</div>
-            <h4>Industry Standards</h4>
-            <p>Curriculum aligned with national healthcare standards and protocols</p>
+            <h4>Medical & Health Dept. Standards</h4>
+            <p>Curriculum aligned with national Medical & Health Department protocols</p>
           </div>
         </div>
       </div>
@@ -101,11 +96,11 @@
             </div>
             <div class="faculty-stat">
               <span class="stat-number">80%</span>
-              <span class="stat-label">Industry Background</span>
+              <span class="stat-label">Medical & Health Dept. Background</span>
             </div>
           </div>
           <p class="faculty-description">
-            Our faculty comprises experienced healthcare professionals, certified educators, and industry experts 
+            Our faculty comprises experienced healthcare professionals, certified educators, and Medical & Health Dept. experts 
             who bring real-world knowledge to the classroom. Many hold advanced degrees and maintain active 
             practice in their respective fields.
           </p>

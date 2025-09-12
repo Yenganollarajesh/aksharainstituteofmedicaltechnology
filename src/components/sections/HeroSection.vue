@@ -25,7 +25,7 @@
           </div>
         </div>
         <p class="admission-info">
-          Admissions open for 2024-25 batch. Visit our campus for offline registration and counseling.
+          Admissions open for 2025-26 batch. Visit our campus for offline registration and counseling.
         </p>
       </div>
     </div>
@@ -63,7 +63,7 @@ import collegeLogo from '@/assets/collegeLogo.png';
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 2rem;
+  padding: 1rem 1rem 2rem 1rem;
   z-index: 2;
 }
 
@@ -78,7 +78,7 @@ import collegeLogo from '@/assets/collegeLogo.png';
   // margin-bottom: 2rem;
   
   img {
-    max-width: 200px;
+    max-width: clamp(140px, 18vw, 220px);
     height: auto;
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
   }
@@ -114,11 +114,11 @@ import collegeLogo from '@/assets/collegeLogo.png';
 }
 
 .hero-highlights {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem 1.25rem;
   margin: 2rem 0;
-  flex-wrap: wrap;
 }
 
 .highlight-item {
@@ -126,7 +126,10 @@ import collegeLogo from '@/assets/collegeLogo.png';
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 200px;
+  padding: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
 }
 
 .highlight-icon {
@@ -155,18 +158,36 @@ import collegeLogo from '@/assets/collegeLogo.png';
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+  }
+  
+  .hero-container {
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
+  
   .hero-highlights {
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
   
   .highlight-item {
-    max-width: 120px;
+    padding: 0.65rem;
   }
   
   .admission-info {
     margin: 1rem 0.5rem 0;
     font-size: 0.95rem;
     padding: 0.8rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .college-name {
+    font-size: clamp(1.6rem, 8vw, 2.1rem);
+  }
+  .hero-description {
+    font-size: 1rem;
   }
 }
 </style>

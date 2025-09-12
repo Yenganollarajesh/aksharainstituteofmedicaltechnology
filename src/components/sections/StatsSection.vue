@@ -9,13 +9,13 @@
       <div class="stats-grid">
         <div class="stat-item">
           <div class="stat-icon">👥</div>
-          <div class="stat-number">500+</div>
+          <div class="stat-number">120+</div>
           <div class="stat-label">Students Enrolled</div>
           <div class="stat-description">Active learners across all programs</div>
         </div>
         <div class="stat-item">
           <div class="stat-icon">📚</div>
-          <div class="stat-number">15+</div>
+          <div class="stat-number">3</div>
           <div class="stat-label">Courses Offered</div>
           <div class="stat-description">Comprehensive paramedical programs</div>
         </div>
@@ -27,7 +27,7 @@
         </div>
         <div class="stat-item">
           <div class="stat-icon">⭐</div>
-          <div class="stat-number">20+</div>
+          <div class="stat-number">2+</div>
           <div class="stat-label">Years Experience</div>
           <div class="stat-description">Trusted healthcare education</div>
         </div>
