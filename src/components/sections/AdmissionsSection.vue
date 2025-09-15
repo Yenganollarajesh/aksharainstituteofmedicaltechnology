@@ -349,7 +349,7 @@ const scrollToContact = () => {
 <style lang="scss" scoped>
 .admissions-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  // background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
 .container {

@@ -8,6 +8,15 @@
       
       <!-- College History & Vision -->
       <div class="about-content">
+        <div class="about-image">
+          <img 
+            src="@/assets/OurHistoryAndVision.png" 
+            alt="Our History and Vision" 
+            class="about-image-content"
+            loading="lazy"
+          />
+        </div>
+        
         <div class="about-text">
           <h3>Our History & Vision</h3>
           <p>
@@ -23,18 +32,6 @@
             <strong>Our Mission:</strong> Providing quality education, practical training, and holistic development to create 
             skilled paramedical professionals ready for the Medical & Health Department.
           </p>
-        </div>
-        
-        <div class="about-image">
-          <div class="image-placeholder">
-            <div class="placeholder-content">
-              <svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 21V9l9-6 9 6v12H3z" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M9 21V12h6v9" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <p>Modern Campus & Facilities</p>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -74,7 +71,7 @@
               </svg>
             </div>
             <h4>Medical & Health Dept. Standards</h4>
-            <p>Curriculum aligned with national Medical & Health Department protocols</p>
+            <p>Curriculum-based teaching with fully equipped library, experienced faculty, and dedicated management</p>
           </div>
         </div>
       </div>
@@ -88,25 +85,24 @@
           <div class="profile-grid">
             <div class="profile-card">
               <div class="profile-avatar">
-                <img src="@/assets/coFounder.jpeg" alt="Co-founder" />
+                <img src="@/assets/coFounder.jpeg" alt="Managing Director" />
               </div>
               <div class="profile-info">
                 <h5>Ms. Sunaiah Parveena Shaik</h5>
-                <p class="profile-title">Co-founder</p>
+                <p class="profile-title">Managing Director</p>
                 <p class="profile-desc">MSc Nursing, MSc Psychology</p>
+                <p class="profile-experience">13 years clinical experience and 7 years teaching experience</p>
               </div>
             </div>
             <div class="profile-card">
               <div class="profile-avatar">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="12" cy="7" r="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <img src="@/assets/Principal.jpeg" alt="Principal" />
               </div>
               <div class="profile-info">
-                <h5>Mrs. Rumandla Padma</h5>
+                <h5>Ms. Rumandla Padma</h5>
                 <p class="profile-title">Principal</p>
-                <p class="profile-desc">MA English, MSc Botany</p>
+                <p class="profile-desc">MSc Botany, MA English</p>
+                <p class="profile-experience">20+ years of teaching experience</p>
               </div>
             </div>
           </div>
@@ -116,7 +112,7 @@
           <h4>Faculty Excellence</h4>
           <div class="faculty-stats">
             <div class="faculty-stat">
-              <span class="stat-number">25+</span>
+              <span class="stat-number">12+</span>
               <span class="stat-label">Experienced Faculty</span>
             </div>
             <div class="faculty-stat">
@@ -175,6 +171,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
+  align-items: center;
   margin-bottom: 4rem;
   
   @media (max-width: 992px) {
@@ -207,9 +204,31 @@
 }
 
 .about-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 66.67%; /* 3:2 aspect ratio */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f8fafc;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .about-image-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 12px;
+  }
 }
 
 .image-placeholder {
@@ -329,57 +348,179 @@
 }
 
 .profile-card {
-  background: #f8fafc;
-  padding: 1.5rem;
+  background: #ffffff;
   border-radius: 12px;
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid rgba(30, 64, 175, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.3), rgba(5, 150, 105, 0.3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-card:hover::before {
+  opacity: 1;
+}
+
+.profile-avatar {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
   align-items: center;
-  gap: 1rem;
-  border: 1px solid #e2e8f0;
-  
-  .profile-avatar {
-    font-size: 2.5rem;
-    width: 60px;
-    height: 60px;
-    background: #1e40af;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    overflow: hidden;
-    
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-  }
-  
-  .profile-info {
-    h5 {
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: #1e293b;
-      margin-bottom: 0.25rem;
-      font-family: 'Inter', sans-serif;
-    }
-    
-    .profile-title {
-      font-size: 0.9rem;
-      color: #1e40af;
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-    }
-    
-    .profile-desc {
-      font-size: 0.85rem;
-      color: #64748b;
-      line-height: 1.4;
-      margin: 0;
-    }
-  }
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);
+  border-bottom: 1px solid rgba(30, 64, 175, 0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-avatar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(30, 64, 175, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.profile-avatar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-avatar img,
+/* Profile Avatar Styles */
+.profile-avatar .default-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 4px solid white;
+  box-shadow: 0 4px 20px rgba(30, 64, 175, 0.15);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.default-avatar {
+  background: #f0f7ff !important;
+}
+
+.default-avatar svg {
+  width: 60%;
+  height: 60%;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover .default-avatar svg {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.profile-info {
+  padding: 1.5rem;
+  padding-top: 0.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(30, 64, 175, 0.15);
+  border-color: rgba(30, 64, 175, 0.3);
+}
+
+.profile-card:hover .profile-avatar img,
+.profile-card:hover .default-avatar {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card:hover .profile-avatar::after {
+  opacity: 0;
+}
+
+.profile-card h5 {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.profile-card:hover h5 {
+  color: #1e40af;
+}
+
+.profile-title {
+  color: #1e40af;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  background: rgba(30, 64, 175, 0.1);
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: auto;
+}
+
+.profile-card:hover .profile-title {
+  background: rgba(30, 64, 175, 0.15);
+  transform: translateY(-2px);
+}
+
+.profile-desc {
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0.25rem 0 0;
 }
 
 .faculty-highlights {

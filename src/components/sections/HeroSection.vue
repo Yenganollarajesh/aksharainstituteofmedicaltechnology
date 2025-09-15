@@ -1,5 +1,7 @@
 <template>
   <section id="home" class="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-overlay"></div>
     <div class="hero-container">
       <div class="hero-content">
         <div class="college-logo">
@@ -40,28 +42,64 @@
 
 <script setup>
 import collegeLogo from '@/assets/collegeLogo.png';
+import collegeBuildingImg from '@/assets/collegeBuildingImg.jpg';
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .hero-section {
   min-height: 100vh;
   display: flex;
-  // align-items: center;
+  align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   position: relative;
   overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 40%, rgba(59, 130, 246, 0.08) 0%, transparent 50%);
-    pointer-events: none;
-  }
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('@/assets/collegeBuildingImg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f5f7fa; /* Light gray background for better contrast */
+  z-index: 0;
+  animation: zoomIn 15s ease-in-out infinite alternate;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  transform: translateZ(0);
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+@keyframes zoomIn {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+  backdrop-filter: blur(1px);
 }
 
 .hero-container {
@@ -69,33 +107,78 @@ import collegeLogo from '@/assets/collegeLogo.png';
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 2rem 1rem;
   z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
   text-align: center;
-  // max-width: 800px;
+  /* max-width: 800px; */
   width: 100%;
   margin: 0 auto;
 }
 
 .college-logo {
-  // margin-bottom: 2rem;
-  
-  img {
-    max-width: clamp(140px, 18vw, 220px);
-    height: auto;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
-  }
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.2), rgba(5, 150, 105, 0.2));
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.college-logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  padding: 0.25rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.college-logo img {
+  max-width: clamp(100px, 16vw, 180px);
+  height: auto;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.25rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.college-logo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.college-logo:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .college-name {
   font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 1rem;
-  color: #1e40af;
+  margin: 1.5rem 0;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-family: 'Playfair Display', serif;
   letter-spacing: -0.02em;
 }
@@ -103,20 +186,20 @@ import collegeLogo from '@/assets/collegeLogo.png';
 .hero-tagline {
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   font-weight: 500;
-  color: #059669;
+  color: #a5f3fc;
   margin-bottom: 1.5rem;
   font-style: italic;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero-description {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
-  color: #64748b;
-  margin-bottom: 2.5rem;
-  // max-width: 600px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  color: #f0f9ff;
+  margin: 2rem auto 3rem;
+  max-width: 800px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 0 1rem;
 }
 
 .college-info {
@@ -132,10 +215,17 @@ import collegeLogo from '@/assets/collegeLogo.png';
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 25px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .info-icon {
@@ -154,53 +244,115 @@ import collegeLogo from '@/assets/collegeLogo.png';
   font-weight: 600;
   color: #1e40af;
   font-size: 1rem;
+  white-space: nowrap;
 }
 
 .admission-info {
-  background: rgba(30, 64, 175, 0.05);
+  background: rgba(30, 64, 175, 0.9);
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  color: #1e40af;
+  color: white;
   font-weight: 500;
   max-width: 600px;
-  margin: 1.5rem auto 0;
-  border-left: 4px solid #1e40af;
+  margin: 2rem auto 0;
+  border: none;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admission-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1024px) {
+  .hero-background {
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: contain;
+    background-color: #000; /* Add a dark background for any empty space */
+  }
+  
+  .hero-container {
+    min-height: 100vh;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: auto;
+    min-height: 100vh;
+    height: 100%;
+    min-height: -webkit-fill-available;
+  }
+  
+  .hero-background {
+    background-size: contain;
+    background-position: center top;
+    background-color: #f5f7fa; /* Light gray background for better contrast */
   }
   
   .hero-container {
-    padding: 1rem 1rem 1.5rem 1rem;
+    padding: 4rem 1rem 2rem;
+    min-height: 100vh;
+  }
+  
+  .college-logo img {
+    max-width: 120px;
   }
   
   .college-info {
-    gap: 1rem;
+    gap: 0.75rem;
     margin: 1.5rem 0;
+    flex-direction: column;
+    align-items: center;
   }
   
   .info-item {
-    padding: 0.65rem 1rem;
+    padding: 0.6rem 1rem;
     font-size: 0.9rem;
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
   }
   
   .admission-info {
-    margin: 1rem 0.5rem 0;
+    margin: 1.5rem 0.5rem 0;
     font-size: 0.95rem;
     padding: 0.8rem 1rem;
+    max-width: 100%;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    padding: 0 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .college-name {
-    font-size: clamp(1.6rem, 8vw, 2.1rem);
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    margin: 1rem 0;
+    padding: 0 0.5rem;
   }
+  
+  .hero-tagline {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
   .hero-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 1.5rem auto 2rem;
+  }
+  
+  .info-item {
+    max-width: 100%;
   }
 }
 </style>

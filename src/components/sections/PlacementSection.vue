@@ -197,7 +197,7 @@
 <style lang="scss" scoped>
 .placement-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  // background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
 .container {
@@ -438,13 +438,14 @@
 
 // Call to Action
 .placement-cta {
-  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
-  padding: 3.5rem 2rem;
+  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+  color: white;
+  padding: 2rem;
   border-radius: 16px;
   text-align: center;
+  box-shadow: 0 8px 30px rgba(30, 64, 175, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   margin: 4rem 0;
-  color: white;
-  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.2);
   font-family: 'Inter', sans-serif;
   position: relative;
   overflow: hidden;
@@ -452,6 +453,7 @@
   .cta-content {
     position: relative;
     z-index: 2;
+    color: white;
   }
   
   .cta-title {
@@ -464,6 +466,7 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    color: white;
   }
   
   .cta-subtitle {
@@ -472,9 +475,10 @@
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    color: rgba(255, 255, 255, 0.95);
+    // color: rgba(255, 255, 255, 0.95);
     line-height: 1.6;
     font-weight: 400;
+    color: #e2e8f0;
   }
   
   .cta-buttons {

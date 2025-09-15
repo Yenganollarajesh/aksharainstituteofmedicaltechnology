@@ -97,7 +97,14 @@ const galleryImages = ref([
 
 // Gallery section styling
 .gallery-section {
-  padding: 5rem 0;
+  // padding: 5rem 0;
   background: var(--background-section);
+}
+</style>
+<style lang="scss">
+section{
+  background: var(--background-section);
+  // background: linear-gradient(to right, #1e3a8a, #0f766e);
+  // background: #f8fafc;
 }
 </style>

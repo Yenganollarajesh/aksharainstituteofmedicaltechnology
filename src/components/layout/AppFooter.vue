@@ -7,7 +7,7 @@
           <div class="footer-section">
             <h3>Paramedical College</h3>
             <p>Shaping Healthcare Professionals for Tomorrow</p>
-            <p>Established in 2004, we have been providing quality paramedical education for over 20 years.</p>
+            <p>Established in 2024, we are committed to providing quality paramedical education.</p>
             <div class="contact-info">
               <p>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 8px;">

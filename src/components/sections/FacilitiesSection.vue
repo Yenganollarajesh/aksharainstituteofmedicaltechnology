@@ -85,7 +85,7 @@
 <style lang="scss" scoped>
 .facilities-section {
   padding: 5rem 0;
-  background: var(--background-white);
+  // background: var(--background-white);
 }
 
 .container {

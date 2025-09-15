@@ -40,6 +40,7 @@ const duplicatedImages = computed(() => {
 .gallery-container {
   padding: 2rem;
   text-align: center;
+  background: var(--background-section);
 }
 
 .gallery-scroller {

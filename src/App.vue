@@ -57,9 +57,9 @@ init();
   --text-primary: #111827; /* Almost black */
   --text-secondary: #4b5563; /* Medium gray */
   --text-light: #6b7280; /* Light gray */
-  --background-white: #ffffff;
-  --background-light: #f9fafb; /* Very light gray */
-  --background-section: #f3f4f6; /* Light section background */
+  --background-white: #e0f2fe; /* Light sky blue */
+  --background-light: #bae6fd; /* Slightly darker sky blue */
+  --background-section: #7dd3fc; /* Medium sky blue */
   --border-color: #e5e7eb;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
@@ -85,6 +85,7 @@ body {
   line-height: 1.7;
   color: var(--text-primary);
   background-color: var(--background-white);
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

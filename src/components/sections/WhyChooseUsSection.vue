@@ -15,7 +15,7 @@
             </svg>
           </div>
           <h3>Quality Education</h3>
-          <p>Industry-aligned curriculum with practical training</p>
+          <p>Healthcare-focused curriculum with hands-on practical training</p>
         </div>
         
         <div class="feature-item">
@@ -45,7 +45,7 @@
             </svg>
           </div>
           <h3>100% Placement</h3>
-          <p>Trusted by Medical & Health Department networks</p>
+          <p>Affiliated with Sreharsha Neuro Psychiatry & Multi-Specialty Hospital and Mallika Emergency & Cardiac Care Hospital</p>
         </div>
       </div>
     </div>
@@ -55,99 +55,101 @@
 <style lang="scss" scoped>
 .why-choose-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-}
+  background-color: #e0f2fe;
+  color: #1e3a8a;
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.section-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #1e40af;
-  margin-bottom: 0.75rem;
-  font-family: 'Inter', sans-serif;
-}
-
-.section-subtitle {
-  font-size: 1.125rem;
-  color: #64748b;
-  font-weight: 400;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.feature-item {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  border: 1px solid #e2e8f0;
-  
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.1);
-    border-color: #1e40af;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
-  
-  .feature-icon {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    svg {
-      width: 40px;
-      height: 40px;
-      color: #1e40af;
-    }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
   }
-  
-  h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #1e293b;
+
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1e3a8a;
     margin-bottom: 0.75rem;
     font-family: 'Inter', sans-serif;
   }
-  
-  p {
-    color: #64748b;
-    line-height: 1.5;
-    font-size: 0.95rem;
-    margin: 0;
+
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: #1e40af;
+    font-weight: 400;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .feature-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    color: #1f2937;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(30, 64, 175, 0.1);
+      border-color: #1e40af;
+    }
+    
+    .feature-icon {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      svg {
+        width: 40px;
+        height: 40px;
+        color: #1e40af;
+      }
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1e40af;
+      margin-bottom: 0.75rem;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    p {
+      color: #374151;
+      line-height: 1.5;
+      font-size: 0.95rem;
+      margin: 0;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .why-choose-section {
     padding: 3rem 0;
-  }
-  
-  .section-title {
-    font-size: 1.875rem;
-  }
-  
-  .features-grid {
-    gap: 1rem;
-  }
-  
-  .feature-item {
-    padding: 1.5rem;
+    
+    .section-title {
+      font-size: 1.875rem;
+    }
+    
+    .features-grid {
+      gap: 1rem;
+    }
+    
+    .feature-item {
+      padding: 1.5rem;
+    }
   }
 }
 </style>
