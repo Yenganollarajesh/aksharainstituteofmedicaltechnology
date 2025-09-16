@@ -255,7 +255,7 @@
                   </span>
                   <div>
                     <strong>Address:</strong>
-                    <p>Paramedical College Campus<br>Main Road, City - 123456</p>
+                    <p>AKSHARA INSTITUTE OF MEDICAL TECHNOLOGY<br>2nd Floor Shetty Complex, Rajendranagar, Mahabubnagar, Telangana 509001</p>
                   </div>
                 </div>
                 <div class="detail-item">
@@ -266,7 +266,7 @@
                   </span>
                   <div>
                     <strong>Admissions Helpline:</strong>
-                    <p>+91-XXXXX-XXXXX<br>admissions@college.edu</p>
+                    <p>+91 9949698592, +91 8328574600<br>aimtmahabubnagar@gmail.com</p>
                   </div>
                 </div>
               </div>

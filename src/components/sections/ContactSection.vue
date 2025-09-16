@@ -9,7 +9,7 @@
                
               <div>
                 <h5 class="font-semibold text-gray-900">AKSHARA INSTITUTE OF MEDICAL TECHNOLOGY</h5>
-                <p class="text-gray-600">H.No. 1-90/3, Near KCP Office Kodad, Suryapet District Telangana - 508206</p>
+                <p class="text-gray-600">2nd Floor Shetty Complex, Rajendranagar, Mahabubnagar, Telangana 509001</p>
               </div>
             </div>
             <div class="mt-6 rounded-lg overflow-hidden border border-gray-200">
@@ -37,7 +37,7 @@
                 </a>
               </div>
             </div>
-            <div class="p-4 bg-blue-50 rounded-lg border border-blue-100 mt-6">
+            <!-- <div class="p-4 bg-blue-50 rounded-lg border border-blue-100 mt-6">
               <div class="college-code">
                 <svg xmlns="http://www.w3.org/2000/svg" 
                     width="24" height="24" viewBox="0 0 24 24" 
@@ -54,7 +54,7 @@
                 <span>College Code: [Enter College Code]</span>
               </div>
               <p class="text-sm text-blue-700">Contact us for admission details and college code information</p>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="contact-info">
@@ -213,7 +213,7 @@
   gap: 1.25rem;
   width: 100%;
   padding: 0.25rem;
-  margin-top: 1.5rem;
+  //margin-top: 1.5rem;
 }
 
 .contact-card {
@@ -233,7 +233,7 @@
 .contact-card-header {
   display: flex;
   align-items: center;
-  padding: 1.25rem 1.5rem;
+  padding: 1rem 1.5rem;
   background-color: #f8fafc;
   border-bottom: 1px solid #e2e8f0;
   gap: 0.75rem;
