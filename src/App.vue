@@ -6,6 +6,7 @@ import CircularProgressBar from './components/sharedComponents/CircularProgressB
 import AppHeader from './components/layout/AppHeader.vue';
 import AppFooter from './components/layout/AppFooter.vue';
 import WhatsAppWidget from './components/WhatsAppWidget.vue';
+import QRCodeWidget from './components/QRCodeWidget.vue';
 
 const route = useRoute();
 const commonStore = useCommon();
@@ -26,6 +27,7 @@ init();
     </main>
     <AppFooter />
     <WhatsAppWidget />
+    <QRCodeWidget />
     <CircularProgressBar v-if="commonLoaderState" />
   </div>
 </template>
