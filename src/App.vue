@@ -5,6 +5,7 @@ import { useCommon } from './stores/common.store.js';
 import CircularProgressBar from './components/sharedComponents/CircularProgressBar.vue';
 import AppHeader from './components/layout/AppHeader.vue';
 import AppFooter from './components/layout/AppFooter.vue';
+import WhatsAppWidget from './components/WhatsAppWidget.vue';
 
 const route = useRoute();
 const commonStore = useCommon();
@@ -24,6 +25,7 @@ init();
       <RouterView :key="route.fullPath" />
     </main>
     <AppFooter />
+    <WhatsAppWidget />
     <CircularProgressBar v-if="commonLoaderState" />
   </div>
 </template>

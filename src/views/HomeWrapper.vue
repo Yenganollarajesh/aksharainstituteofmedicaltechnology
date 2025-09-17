@@ -12,7 +12,7 @@
 
     <AdmissionsSection />
 
-    <NewsSection />
+    <!-- <NewsSection /> -->
 
     <PlacementSection />
     

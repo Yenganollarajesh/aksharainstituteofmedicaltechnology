@@ -108,14 +108,54 @@
               <div class="timeline-number">2</div>
               <div class="timeline-content">
                 <h4>Fill Application & Gather Documents</h4>
-                <p>Complete the form and attach required documents (photocopies acceptable)</p>
-                <ul class="document-list">
-                  <li>10+2 Mark Sheet & Certificate</li>
-                  <li>Transfer Certificate</li>
-                  <li>Character Certificate</li>
-                  <li>Passport Size Photos (4 copies)</li>
-                  <li>Aadhar Card Copy</li>
-                </ul>
+                <div class="application-requirements">
+                  <div class="requirement-card">
+                    <div class="requirement-header">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <h5>Important Instructions</h5>
+                    </div>
+                    <div class="requirement-content">
+                      <p class="note">Please read these instructions carefully before filling the application form:</p>
+                      <ul class="instructions-list">
+                        <li><strong>Deadline:</strong> Filled-in application forms must reach the DM&HO or concerned authority by <span class="highlight">5:00 PM on 30-10-2024</span>.</li>
+                        <li><strong>Handwriting:</strong> Application must be filled in the candidate's own handwriting in English.</li>
+                        <li><strong>Accuracy:</strong> Applications with incomplete/incorrect information or false certificates will be rejected without notice.</li>
+                        <li><strong>No Changes:</strong> Candidates cannot change their social status or local candidature after submission.</li>
+                        <li><strong>Complete Submission:</strong> Incomplete applications or those without required certificates will be automatically rejected.</li>
+                        <li><strong>Fee Policy:</strong> Full course fees must be paid if studies are discontinued to retrieve original certificates.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="requirement-card documents-card">
+                    <div class="requirement-header">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <h5>Required Documents</h5>
+                    </div>
+                    <div class="requirement-content">
+                      <p class="note">Please prepare the following documents for submission:</p>
+                      <ul class="documents-list">
+                        <li><span class="document-number">1</span> Date of Birth certificate (SSC or equivalent)</li>
+                        <li><span class="document-number">2</span> Marks memo and pass certificate of qualifying examination (INTERMEDIATE or equivalent) including transfer certificate</li>
+                        <li><span class="document-number">3</span> Study certificate from 6th class to Intermediate</li>
+                        <li><span class="document-number">4</span> Caste Certificate (if applicable for SC/ST/BC candidates)</li>
+                        <li><span class="document-number">5</span> Aadhar Card copy</li>
+                      </ul>
+                      <div class="submission-note">
+                        <strong>Note:</strong> Submit the filled application form with a processing fee of <span class="highlight">₹100 in cash</span> by <span class="highlight">5:00 PM on 30-10-2024</span>.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="timeline-item">
@@ -323,7 +363,7 @@
 // Download form functionality
 const downloadForm = (formType) => {
   // Import the PDF file from assets
-  import('@/assets/file-example_PDF_1MB.pdf').then((pdfModule) => {
+  import('@/assets/ApplicationForm.pdf').then((pdfModule) => {
     // Create a temporary link element to trigger download
     const link = document.createElement('a');
     link.href = pdfModule.default;
@@ -645,6 +685,224 @@ const scrollToContact = () => {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.application-requirements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.requirement-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  border-left: 4px solid #3f51b5;
+}
+
+.documents-card {
+  border-left-color: #4caf50;
+}
+
+.requirement-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+}
+
+.requirement-header svg {
+  color: #3f51b5;
+  flex-shrink: 0;
+}
+
+.documents-card .requirement-header svg {
+  color: #4caf50;
+}
+
+.requirement-header h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.requirement-content {
+  padding: 1.25rem;
+}
+
+.note {
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.instructions-list,
+.documents-list {
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+
+.instructions-list li,
+.documents-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.documents-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.documents-list li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.document-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.highlight {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.submission-note {
+  margin-top: 1.25rem;
+  padding: 0.75rem 1rem;
+  background-color: #fff8e1;
+  border-radius: 6px;
+  border-right: 3px solid #ffc107;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .application-requirements {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .requirement-card {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .requirement-header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .requirement-header h5 {
+    font-size: 1rem;
+  }
+  
+  .requirement-header svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .requirement-content {
+    padding: 1rem;
+  }
+  
+  .note {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .instructions-list,
+  .documents-list {
+    padding-left: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  
+  .instructions-list li,
+  .documents-list li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .document-number {
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+  }
+  
+  .submission-note {
+    margin-top: 1rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  /* Adjust timeline item spacing on mobile */
+  .timeline-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+  }
+  
+  .timeline-number {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+    line-height: 28px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .requirement-header {
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .requirement-content {
+    padding: 0.8rem;
+  }
+  
+  .documents-list li {
+    align-items: flex-start;
+    padding: 0.4rem 0;
+  }
+  
+  .document-number {
+    margin-top: 3px;
+  }
+  
+  .submission-note {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  .highlight {
+    display: inline-block;
+    margin-top: 2px;
+  }
 }
 
 .document-list {
@@ -747,54 +1005,99 @@ const scrollToContact = () => {
   }
 }
 
-// Offline Registration
+//* Offline Registration */
+.offline-registration {
+  margin-top: 3rem;
+}
+
 .offline-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
+  margin-top: 1.5rem;
   
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr;
   }
 }
 
 .offline-info, .offline-benefits {
   background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  @media (max-width: 768px) {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
   
   h4 {
     color: #1e40af;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e2e8f0;
+    
+    @media (max-width: 768px) {
+      font-size: 1.25rem;
+    }
   }
 }
 
 .campus-details {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
+  
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+  
 }
 
 .detail-item {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+  padding: 0.35rem 0;
+  
+  @media (max-width: 768px) {
+    gap: 0.85rem;
+  }
   
   .icon {
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0.2rem;
+    width: 36px;
+    height: 36px;
+    background: #f0f7ff;
+    border-radius: 8px;
+    
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
     
     svg {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       color: #1e40af;
+      
+      @media (max-width: 768px) {
+        width: 16px;
+        height: 16px;
+      }
     }
   }
   
@@ -804,26 +1107,69 @@ const scrollToContact = () => {
     strong {
       color: #1e40af;
       display: block;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.3rem;
+      font-size: 1.05rem;
+      
+      @media (max-width: 768px) {
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
+      }
     }
     
     p {
-      color: #64748b;
+      color: #4a5568;
       margin: 0;
       line-height: 1.5;
+      font-size: 0.95rem;
+      
+      @media (max-width: 768px) {
+        font-size: 0.88rem;
+        line-height: 1.45;
+      }
     }
   }
 }
 
-.offline-benefits ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.offline-benefits {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.8rem;
+    
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      padding: 0.6rem 0.75rem;
+      background: #f8fafc;
+      border-radius: 8px;
+      color: #2d3748;
+      line-height: 1.4;
+      transition: all 0.2s ease;
+      font-size: 0.94rem;
+      
+      &:hover {
+        background: #edf2f7;
+        transform: translateX(4px);
+      }
+      
+      svg {
+        flex-shrink: 0;
+        margin-top: 0.15rem;
+      }
+      
+      @media (max-width: 768px) {
+        font-size: 0.88rem;
+        padding: 0.5rem 0.6rem;
+        gap: 0.6rem;
+      }
+    }
+  }
   
-  li {
-    padding: 0.5rem 0;
-    color: #64748b;
-    line-height: 1.5;
+  @media (max-width: 1024px) {
+    margin-top: 1.5rem;
   }
 }
 
