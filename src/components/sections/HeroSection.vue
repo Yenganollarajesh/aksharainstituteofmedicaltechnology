@@ -29,7 +29,7 @@
                 <path d="M8 8h8M8 12h6M8 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
             </span>
-            <span class="info-text">College Code: AIT-2024</span>
+            <span class="info-text">College Code: AIMT</span>
           </div>
         </div>
         <p class="admission-info">
