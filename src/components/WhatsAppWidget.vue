@@ -58,7 +58,7 @@ const handleHover = (isHovering) => {
 const openWhatsApp = () => {
   // Replace with your actual WhatsApp number (with country code, no + or spaces)
   const phoneNumber = '919949698592'; // Example Indian number
-  const message = encodeURIComponent('Hello, I have a question about your courses.');
+  const message = encodeURIComponent('Hello, I am interested in learning more about the courses at Akshara Institute of Medical Technology. Could you please provide me with more information about the admission process and available programs?');
   
   // Track the interaction
   lastInteraction.value = Date.now();

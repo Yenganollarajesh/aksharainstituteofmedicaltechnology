@@ -380,7 +380,7 @@ const downloadForm = (formType) => {
 // Open WhatsApp with pre-filled message
 const openWhatsApp = () => {
   const phoneNumber = '919949698592'; // Your WhatsApp number with country code
-  const message = encodeURIComponent('Hello, I have a question about admissions.');
+  const message = encodeURIComponent('Hello, I am interested in learning more about the admission process at Akshara Institute of Medical Technology. Could you please provide me with more information about the available courses and admission requirements?');
   window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank', 'noopener,noreferrer');
 };
 
@@ -428,9 +428,9 @@ const scrollToContact = () => {
 .admission-status-banner {
   background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
   color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 16px;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -440,22 +440,35 @@ const scrollToContact = () => {
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
   }
 }
 
 .status-content {
   .status-badge {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      justify-content: center;
+      margin-bottom: 0.4rem;
+    }
+    
     svg {
       width: 16px;
       height: 16px;
       flex-shrink: 0;
+      
+      @media (max-width: 768px) {
+        width: 14px;
+        height: 14px;
+      }
     }
   }
   
@@ -463,19 +476,30 @@ const scrollToContact = () => {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-wrap: wrap;
     
     @media (max-width: 768px) {
       justify-content: center;
+      gap: 0.3rem;
     }
     
     .deadline-label {
       font-weight: 400;
       opacity: 0.9;
+      font-size: 0.95rem;
+      
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+      }
     }
     
     .deadline-date {
       font-weight: 600;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
+      
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -483,10 +507,12 @@ const scrollToContact = () => {
 .quick-actions {
   display: flex;
   gap: 1rem;
+  flex-shrink: 0;
   
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
+    gap: 0.75rem;
   }
 }
 
