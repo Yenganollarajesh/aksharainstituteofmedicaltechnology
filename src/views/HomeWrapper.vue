@@ -63,12 +63,20 @@ import image17 from '@/assets/gallery/image17.jpeg';
 import image18 from '@/assets/gallery/image18.jpeg';
 import image19 from '@/assets/gallery/image19.jpeg';
 import image20 from '@/assets/gallery/image20.jpeg';
+import image21 from '@/assets/gallery/image21.jpeg';
+import image22 from '@/assets/gallery/image22.jpeg';
+import image23 from '@/assets/gallery/image23.jpeg';
+import image24 from '@/assets/gallery/image24.jpeg';
 
 const galleryImages = ref([
   { src: image1, alt: 'Gallery Image 1' },
   { src: image2, alt: 'Gallery Image 2' },
   { src: image3, alt: 'Gallery Image 3' },
   { src: image4, alt: 'Gallery Image 4' },
+  { src: image21, alt: 'Gallery Image 21' },
+  { src: image22, alt: 'Gallery Image 22' },
+  { src: image23, alt: 'Gallery Image 23' },
+  { src: image24, alt: 'Gallery Image 24' },
   { src: image5, alt: 'Gallery Image 5' },
   { src: image6, alt: 'Gallery Image 6' },
   { src: image7, alt: 'Gallery Image 7' },
