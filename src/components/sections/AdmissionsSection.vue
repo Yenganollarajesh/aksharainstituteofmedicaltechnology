@@ -120,7 +120,7 @@
                     <div class="requirement-content">
                       <p class="note">Please read these instructions carefully before filling the application form:</p>
                       <ul class="instructions-list">
-                        <li><strong>Deadline:</strong> Filled-in application forms must reach the DM&HO or concerned authority by <span class="highlight">5:00 PM on 30-10-2024</span>.</li>
+                        <!-- <li><strong>Deadline:</strong> Filled-in application forms must reach the DM&HO or concerned authority by <span class="highlight">5:00 PM on 30-10-2024</span>.</li> -->
                         <li><strong>Handwriting:</strong> Application must be filled in the candidate's own handwriting in English.</li>
                         <li><strong>Accuracy:</strong> Applications with incomplete/incorrect information or false certificates will be rejected without notice.</li>
                         <li><strong>No Changes:</strong> Candidates cannot change their social status or local candidature after submission.</li>
