@@ -22,7 +22,7 @@
                 <circle cx="9" cy="20" r="1" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <circle cx="20" cy="20" r="1" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <svg v-else-if="course.id === 'dmsmot'" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg v-else-if="course.id === 'dat'" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="4" y="4" width="16" height="16" rx="2" stroke="#ffffff" stroke-width="2"/>
                 <path d="M8 8h8v8H8z" stroke="#ffffff" stroke-width="2"/>
               </svg>
@@ -95,8 +95,8 @@ const courses = [
     bgImage: dmltBg
   },
   {
-    id: 'dmsmot',
-    title: 'Diploma in Medical sterilization Management & operation theatre technology (DMSMOT)',
+    id: 'dat',
+    title: 'DAT (Diploma in Anaesthesia technology)',
     duration: '2 Years',
     eligibility: '10+2 or Vocational (Intermediate) from recognized board',
     subjects: [
@@ -110,7 +110,7 @@ const courses = [
   },
   {
     id: 'dmsot',
-    title: 'Diploma in Medical Surgical OT Technology (DMSOT)',
+    title: 'DMSOT (Diploma in Medical sterilisation management & operation theatre management technology)',
     duration: '2 Years',
     eligibility: '10+2 or Vocational (Intermediate)',
     subjects: [

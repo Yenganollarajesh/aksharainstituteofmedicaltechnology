@@ -57,7 +57,7 @@
               </ul>
             </div>
             <div class="eligibility-card">
-              <h4>DMSMOT (Diploma in Medical sterilization Management & operation theatre technology)</h4>
+              <h4>DAT (Diploma in Anaesthesia technology)</h4>
               <ul>
                 <li><strong>Education:</strong> 10+2 or Vocational (Intermediate) from recognized board</li>
                 <li><strong>Minimum Marks:</strong> 50% aggregate in 10+2</li>
@@ -66,7 +66,7 @@
               </ul>
             </div>
             <div class="eligibility-card">
-              <h4>DMSOT (Diploma in Medical Surgical OT Technology)</h4>
+              <h4>DMSOT (Diploma in Medical sterilisation management & operation theatre management technology)</h4>
               <ul>
                 <li><strong>Education:</strong> 10+2 or Vocational (Intermediate) from recognized board</li>
                 <li><strong>Minimum Marks:</strong> 50% aggregate in 10+2</li>
@@ -203,26 +203,26 @@
             <!-- Scholarship Admission -->
             <div class="requirement-card scholarship">
               <div class="requirement-header">
-                <h4>FOR SCHOLARSHIP ADMISSION</h4>
+                <h4>For Scholarship Admission</h4>
               </div>
               <div class="requirement-content">
                 <div class="documents-required">
                   <h6>Required Documents:</h6>
                   <ol>
-                    <li>SSC MEMO</li>
-                    <li>INTER MEMO</li>
-                    <li>BONAFIDES 1-10TH AND INTER</li>
-                    <li>TRANSFER CERTIFICATE</li>
-                    <li>CASTE CERTIFICATE</li>
-                    <li>INCOME CERTIFICATE</li>
-                    <li>AADHAR XEROX</li>
-                    <li>BANK ACCOUNT XEROX</li>
-                    <li>PASSPORT SIZE PHOTOS - 6</li>
+                    <li>SSC Memo</li>
+                    <li>Intermediate Memo</li>
+                    <li>Bonafide Certificates (1st to 10th & Intermediate)</li>
+                    <li>Transfer Certificate</li>
+                    <li>Caste Certificate</li>
+                    <li>Income Certificate</li>
+                    <li>Aadhar Card Copy</li>
+                    <li>Bank Account Details Copy</li>
+                    <li>Passport Size Photographs (6 Nos.)</li>
                   </ol>
                 </div>
                 
                 <div class="note">
-                  <strong>NOTE:</strong> ALL CERTIFICATES 2 SETS XEROX SHOULD BE SUBMITTED ON ADMISSION TIME.
+<strong>Note:</strong> Please submit two complete sets of photocopies of all required documents at the time of admission.
                 </div>
               </div>
             </div>
@@ -230,24 +230,24 @@
             <!-- Management Admission -->
             <div class="requirement-card management">
               <div class="requirement-header">
-                <h4>FOR MANAGEMENT ADMISSION</h4>
+                <h4>For Management Admission</h4>
               </div>
               <div class="requirement-content">
                 <div class="documents-required">
                   <h6>Required Documents:</h6>
                   <ol>
-                    <li>SSC MEMO</li>
-                    <li>INTER MEMO</li>
-                    <li>BONAFIDES 1-10TH AND INTER</li>
-                    <li>TRANSFER CERTIFICATE</li>
-                    <li>CASTE CERTIFICATE</li>
-                    <li>AADHAR XEROX</li>
-                    <li>PASSPORT SIZE PHOTOS - 6</li>
+                    <li>SSC Memo</li>
+                    <li>Intermediate Memo</li>
+                    <li>Bonafide Certificates (1st to 10th & Intermediate)</li>
+                    <li>Transfer Certificate</li>
+                    <li>Caste Certificate</li>
+                    <li>Aadhar Card Copy</li>
+                    <li>Passport Size Photographs (6 Nos.)</li>
                   </ol>
                 </div>
                 
                 <div class="note">
-                  <strong>NOTE:</strong> ALL CERTIFICATES 1 SET COLOUR XEROX 1 SET BLACK AND WHITE XEROX SHOULD BE SUBMITTED ON ADMISSION TIME.
+<strong>Note:</strong> Please submit one set of color photocopies and one set of black & white photocopies of all required documents at the time of admission.
                 </div>
               </div>
             </div>
@@ -300,9 +300,9 @@
     <circle cx="18" cy="9" r="2" fill="currentColor"/>
   </svg>
               </div>
-              <h4>DMSMOT Specific Form</h4>
-              <p>Specialized form for Medical sterilization Management & operation theatre technology</p>
-              <button class="btn-download" @click="downloadForm('dmsmot')">
+              <h4>DAT Specific Form</h4>
+              <p>Specialized form for Anaesthesia technology</p>
+              <button class="btn-download" @click="downloadForm('dat')">
                 Download PDF
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z" fill="currentColor"/>
@@ -317,7 +317,7 @@
   </svg>
               </div>
               <h4>DMSOT Specific Form</h4>
-              <p>Specialized form for Medical Surgical OT Technology</p>
+              <p>Specialized form for Medical sterilisation management & operation theatre management technology</p>
               <button class="btn-download" @click="downloadForm('dmsot')">
                 Download PDF
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
