@@ -150,9 +150,9 @@
                         <li><span class="document-number">4</span> Caste Certificate (if applicable for SC/ST/BC candidates)</li>
                         <li><span class="document-number">5</span> Aadhar Card copy</li>
                       </ul>
-                      <div class="submission-note">
+                      <!-- <div class="submission-note">
                         <strong>Note:</strong> Submit the filled application form with a processing fee of <span class="highlight">₹100 in cash</span> by <span class="highlight">5:00 PM on 30-10-2024</span>.
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
