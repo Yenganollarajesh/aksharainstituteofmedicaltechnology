@@ -7,7 +7,7 @@
       </div>
 
       <!-- Admission Status Banner -->
-      <div class="admission-status-banner">
+      <!-- <div class="admission-status-banner">
         <div class="status-content">
           <div class="status-badge">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@
             Contact Admissions
           </button>
         </div>
-      </div>
+      </div> -->
 
       <div class="admission-content">
         <!-- Eligibility Criteria -->
@@ -57,7 +57,7 @@
               </ul>
             </div>
             <div class="eligibility-card">
-              <h4>DANS (Diploma in Anaesthesia & Nursing Sciences)</h4>
+              <h4>DMSMOT (Diploma in Medical sterilization Management & operation theatre technology)</h4>
               <ul>
                 <li><strong>Education:</strong> 10+2 or Vocational (Intermediate) from recognized board</li>
                 <li><strong>Minimum Marks:</strong> 50% aggregate in 10+2</li>
@@ -190,6 +190,70 @@
           </div>
         </div>
 
+        <!-- Scholarship & Management Admission Requirements -->
+        <div class="admission-requirements">
+          <h3 class="content-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2ZM2 17L12 22L22 17M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Document Requirements
+          </h3>
+          
+          <div class="requirements-grid">
+            <!-- Scholarship Admission -->
+            <div class="requirement-card scholarship">
+              <div class="requirement-header">
+                <h4>FOR SCHOLARSHIP ADMISSION</h4>
+              </div>
+              <div class="requirement-content">
+                <div class="documents-required">
+                  <h6>Required Documents:</h6>
+                  <ol>
+                    <li>SSC MEMO</li>
+                    <li>INTER MEMO</li>
+                    <li>BONAFIDES 1-10TH AND INTER</li>
+                    <li>TRANSFER CERTIFICATE</li>
+                    <li>CASTE CERTIFICATE</li>
+                    <li>INCOME CERTIFICATE</li>
+                    <li>AADHAR XEROX</li>
+                    <li>BANK ACCOUNT XEROX</li>
+                    <li>PASSPORT SIZE PHOTOS - 6</li>
+                  </ol>
+                </div>
+                
+                <div class="note">
+                  <strong>NOTE:</strong> ALL CERTIFICATES 2 SETS XEROX SHOULD BE SUBMITTED ON ADMISSION TIME.
+                </div>
+              </div>
+            </div>
+            
+            <!-- Management Admission -->
+            <div class="requirement-card management">
+              <div class="requirement-header">
+                <h4>FOR MANAGEMENT ADMISSION</h4>
+              </div>
+              <div class="requirement-content">
+                <div class="documents-required">
+                  <h6>Required Documents:</h6>
+                  <ol>
+                    <li>SSC MEMO</li>
+                    <li>INTER MEMO</li>
+                    <li>BONAFIDES 1-10TH AND INTER</li>
+                    <li>TRANSFER CERTIFICATE</li>
+                    <li>CASTE CERTIFICATE</li>
+                    <li>AADHAR XEROX</li>
+                    <li>PASSPORT SIZE PHOTOS - 6</li>
+                  </ol>
+                </div>
+                
+                <div class="note">
+                  <strong>NOTE:</strong> ALL CERTIFICATES 1 SET COLOUR XEROX 1 SET BLACK AND WHITE XEROX SHOULD BE SUBMITTED ON ADMISSION TIME.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Downloadable Forms -->
         <div class="forms-section">
           <h3 class="content-title">
@@ -236,9 +300,9 @@
     <circle cx="18" cy="9" r="2" fill="currentColor"/>
   </svg>
               </div>
-              <h4>DANS Specific Form</h4>
-              <p>Specialized form for Anaesthesia & Nursing Sciences</p>
-              <button class="btn-download" @click="downloadForm('dans')">
+              <h4>DMSMOT Specific Form</h4>
+              <p>Specialized form for Medical sterilization Management & operation theatre technology</p>
+              <button class="btn-download" @click="downloadForm('dmsmot')">
                 Download PDF
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z" fill="currentColor"/>
@@ -363,7 +427,7 @@
 // Download form functionality
 const downloadForm = (formType) => {
   // Import the PDF file from assets
-  import('@/assets/ApplicationForm.pdf').then((pdfModule) => {
+  import('@/assets/ApplicationForm2.pdf').then((pdfModule) => {
     // Create a temporary link element to trigger download
     const link = document.createElement('a');
     link.href = pdfModule.default;
@@ -976,6 +1040,120 @@ const scrollToContact = () => {
 }
 
 // Forms Section
+.admission-requirements {
+  margin: 3rem 0;
+  
+  .requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+  }
+  
+  .requirement-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e2e8f0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+    
+    &.scholarship {
+      border-top: 4px solid #4f46e5;
+    }
+    
+    &.management {
+      border-top: 4px solid #10b981;
+    }
+  }
+  
+  .requirement-header {
+    padding: 1.25rem 1.5rem;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    
+    h4 {
+      margin: 0;
+      color: #1e293b;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+  
+  .requirement-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    h5 {
+      margin: 0 0 0.5rem;
+      color: #1e293b;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    
+    .address {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+    
+    .documents-required {
+      margin-bottom: 1.25rem;
+      flex: 1;
+      
+      h6 {
+        margin: 0 0 0.75rem;
+        color: #334155;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+      
+      ol {
+        margin: 0;
+        padding-left: 1.25rem;
+        
+        li {
+          margin-bottom: 0.5rem;
+          color: #475569;
+          font-size: 0.9rem;
+          line-height: 1.5;
+        }
+      }
+    }
+    
+    .note {
+      background-color: #f8fafc;
+      border-left: 3px solid #f59e0b;
+      padding: 0.75rem 1rem;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.85rem;
+      color: #64748b;
+      line-height: 1.5;
+      
+      strong {
+        color: #d97706;
+      }
+    }
+  }
+}
+
 .forms-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
