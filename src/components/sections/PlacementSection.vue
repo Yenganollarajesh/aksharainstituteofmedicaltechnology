@@ -10,7 +10,7 @@
       <div class="stats-overview">
         <div class="stat-item">
           <div class="stat-number">100%</div>
-          <div class="stat-label">Placement Rate</div>
+          <div class="stat-label">Placement Assistance</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">₹4.5L</div>
@@ -21,8 +21,8 @@
           <div class="stat-label">Partner Hospitals</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">2000+</div>
-          <div class="stat-label">Alumni Placed</div>
+          <div class="stat-number">1:1</div>
+          <div class="stat-label">Career Counseling</div>
         </div>
       </div>
 
