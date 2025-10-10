@@ -22,8 +22,8 @@ init();
 
 <template>
   <div class="app-wrapper">
-    <!-- <NotFoundPage/> -->
-    <AppHeader />
+    <NotFoundPage/>
+   <!--  <AppHeader />
     <main class="main-content">
       <RouterView :key="route.fullPath" />
     </main>
